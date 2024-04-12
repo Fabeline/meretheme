@@ -1,0 +1,8 @@
+.nav-button {
+    background-color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+}

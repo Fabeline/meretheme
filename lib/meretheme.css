@@ -11,4 +11,8 @@ iframe {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-  }
+}
+
+.room {
+    margin: 0;
+}
