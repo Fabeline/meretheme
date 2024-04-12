@@ -1,2 +1,2 @@
-# meretheme
-Simplistic frontend framework
+# MereTheme
+A simplistic frontend framework
