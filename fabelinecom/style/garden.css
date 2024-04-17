@@ -1,3 +1,10 @@
+[data-mt-type="garden"] {
+    background-color: var(--darkBackground);
+    background: url(https://www.fabeline.com/aiwebsite/mars.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .nav-button {
     display: flex;
     justify-content: center;

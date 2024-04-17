@@ -7,3 +7,7 @@ iframe {
     margin: 0;
     overflow: hidden;
 }
+
+[data-mt-type="entrance-door"]{
+    transition: height 0.5s;
+}
