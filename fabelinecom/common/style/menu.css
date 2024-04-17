@@ -1,0 +1,27 @@
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--darkBackground);
+    border-radius: var(--borderRadius);
+    color: var(--lightText);
+    max-width: 150px;
+    height: 60px;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.active {
+    background-color: #f44336;
+}

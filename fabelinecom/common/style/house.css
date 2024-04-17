@@ -1,0 +1,36 @@
+.house {
+    margin: 0;
+    overflow: hidden;
+}
+
+.garden {
+    background-color: var(--darkBackground);
+    background: url(https://www.fabeline.com/aiwebsite/mars.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.entrance-door{
+    margin: 0;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.box:not(.entrance-door) {
+    background-color: var(--darkBackground);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.image {
+    width: 100%;
+}
+
+.entrance-door .no-entrance {
+    display: none;
+}

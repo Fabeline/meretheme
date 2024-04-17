@@ -1,0 +1,17 @@
+.article-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+}
+
+.article-preview {
+    color: var(--lightText);
+    padding: 10px 15px;
+    width: 235px;
+    border-radius: 5px;
+    background-color: var(--darkBackground);
+    /*box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);*/
+    border: 2px solid var(--line-color);
+}
