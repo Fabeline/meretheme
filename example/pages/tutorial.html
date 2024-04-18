@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../lib/meretheme.css" />
+</head>
+
+<body data-mt-id="home" data-mt-type="house">
+    <div data-mt-include="w3.css" />
+    <div data-mt-type="content">
+        <h2>Tutorial</h2>
+        <p>Welcome to the MereTheme tutorial! In this tutorial, we will cover the basics of using MereTheme to style
+            your web pages.</p>
+
+        <h3>Step 1: Include MereTheme files</h3>
+        <p>To get started, include the MereTheme JavaScript and CSS files in your HTML file. You can do this by adding
+            the following lines of code to the `
+
+            <head>` section:
+        </p>
+
+        <pre>
+        &lt;script src="../../lib/meretheme.js"&gt;&lt;/script&gt;
+        &lt;link rel="stylesheet" href="../../lib/meretheme.css" /&gt;
+        </pre>
+
+        <h3>Step 2: Define the MereTheme attributes</h3>
+        <p>In the `
+
+            <body>` section of your HTML file, add the following attributes to the `
+
+                <body>` tag:
+        </p>
+
+        <pre>
+        &lt;body data-mt-id="home" data-mt-type="house"&gt;
+        </pre>
+
+        <p>The `data-mt-id` attribute specifies the ID of the MereTheme instance, and the `data-mt-type` attribute
+            specifies the type of the MereTheme instance.</p>
+
+        <h3>Step 3: Include external CSS files</h3>
+        <p>If you want to include additional CSS files, you can use the `data-mt-include` attribute. For example, to
+            include the "w3.css" file, add the following line of code:</p>
+
+        <pre>
+        &lt;div data-mt-include="w3.css"&gt;&lt;/div&gt;
+        </pre>
+
+        <h3>Step 4: Add content</h3>
+        <p>Finally, you can add your content within the `
+        <div>` element with the `data-mt-type="content"` attribute. For example:</p>
+
+            <pre>
+        &lt;div data-mt-type="content"&gt;
+            &lt;h2&gt;Tutorial&lt;/h2&gt;
+            &lt;p&gt;This is a tutorial on how to use MereTheme.&lt;/p&gt;
+        &lt;/div&gt;
+        </pre>
+
+            <p>Feel free to customize the content and styles to fit your needs.</p>
+
+            <p>That's it! You have now created a basic MereTheme page. You can explore more advanced features and
+                customization options in the MereTheme documentation.</p>
+        </div>
+</body>
+
+</html>

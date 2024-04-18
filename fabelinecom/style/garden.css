@@ -20,6 +20,11 @@
     font-family: var(--fontFamily);
     padding: 0 20px;
     cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.nav-button:hover {
+    background-color: #f44336;
 }
 
 .button-wrapper {

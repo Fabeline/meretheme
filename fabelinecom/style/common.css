@@ -6,6 +6,7 @@ html {
     --lightText: white;
     --fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fontSize: 1em;
+    --fontSizeSmall: 0.8em;
     --borderRadius: 8px;
 
     color: var(--lightText);

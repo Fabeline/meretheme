@@ -11,3 +11,11 @@ iframe {
 [data-mt-type="entrance-door"]{
     transition: height 0.5s;
 }
+
+.light-mode {
+    filter: invert(100%);
+}
+
+.light-mode img, .light-mode iframe {
+    filter: invert(100%);
+}
