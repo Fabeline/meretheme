@@ -19,3 +19,7 @@ iframe {
 .light-mode img, .light-mode iframe {
     filter: invert(100%);
 }
+
+.mt-house {
+    overflow: hidden;
+}

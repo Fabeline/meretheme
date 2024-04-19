@@ -9,62 +9,33 @@
 </head>
 
 <body data-mt-id="home" data-mt-type="house">
-    <div data-mt-include="w3.css" />
+    <div data-mt-include="bootstrap" />
     <div data-mt-type="content">
-        <h2>Tutorial</h2>
-        <p>Welcome to the MereTheme tutorial! In this tutorial, we will cover the basics of using MereTheme to style
-            your web pages.</p>
+        <!-- iframe data-mt-type="room" data-mt-id="analogy" src="../rooms/analogy.html"></!-->
+        <div data-mt-markdown="true">
+            ## Tutorial
 
-        <h3>Step 1: Include MereTheme files</h3>
-        <p>To get started, include the MereTheme JavaScript and CSS files in your HTML file. You can do this by adding
-            the following lines of code to the `
+            ### Getting started
 
-            <head>` section:
-        </p>
+            To get started with MereTheme, you need to include the MereTheme JavaScript and CSS files in your HTML file.
+            You can download the files from the [MereTheme GitHub repository]
 
-        <pre>
-        &lt;script src="../../lib/meretheme.js"&gt;&lt;/script&gt;
-        &lt;link rel="stylesheet" href="../../lib/meretheme.css" /&gt;
-        </pre>
+            ### Analogies
+            To make it easier to understand how MereTheme works, we have created some analogies.
 
-        <h3>Step 2: Define the MereTheme attributes</h3>
-        <p>In the `
+            #### Garden
+            The topmost page is the
+            garden. It is the master controller, and contains the content that should be visible on every page. For
+            instance the menu and a footer.
 
-            <body>` section of your HTML file, add the following attributes to the `
+            #### House
+            The garden has an entrance door to a house. It can only have one house at a given time.
+            The house are the pages. They are the main content of the site.
 
-                <body>` tag:
-        </p>
+            #### Room
+            A house can have mutliple rooms. They are
+            small, reusable components that be shared across the houses.
 
-        <pre>
-        &lt;body data-mt-id="home" data-mt-type="house"&gt;
-        </pre>
-
-        <p>The `data-mt-id` attribute specifies the ID of the MereTheme instance, and the `data-mt-type` attribute
-            specifies the type of the MereTheme instance.</p>
-
-        <h3>Step 3: Include external CSS files</h3>
-        <p>If you want to include additional CSS files, you can use the `data-mt-include` attribute. For example, to
-            include the "w3.css" file, add the following line of code:</p>
-
-        <pre>
-        &lt;div data-mt-include="w3.css"&gt;&lt;/div&gt;
-        </pre>
-
-        <h3>Step 4: Add content</h3>
-        <p>Finally, you can add your content within the `
-        <div>` element with the `data-mt-type="content"` attribute. For example:</p>
-
-            <pre>
-        &lt;div data-mt-type="content"&gt;
-            &lt;h2&gt;Tutorial&lt;/h2&gt;
-            &lt;p&gt;This is a tutorial on how to use MereTheme.&lt;/p&gt;
-        &lt;/div&gt;
-        </pre>
-
-            <p>Feel free to customize the content and styles to fit your needs.</p>
-
-            <p>That's it! You have now created a basic MereTheme page. You can explore more advanced features and
-                customization options in the MereTheme documentation.</p>
         </div>
 </body>
 

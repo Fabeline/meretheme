@@ -9,31 +9,38 @@
 </head>
 
 <body data-mt-type="garden">
-    <div data-mt-include="w3.css" />
+    <div data-mt-include="bootstrap" />
 
-    <div class="w3-container w3-teal">
-        <h1>MereTheme</h1>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-mt-type="menu-link" href="index.html" target="_top">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-mt-type="menu-link" href="pages/tutorial.html" target="_top">Tutorial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-mt-type="menu-link" href="pages/implementation.html"
+                    target="_top">Implementation</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>MereTheme</h1>
+            <p>- Your simple frontend framework</p>
+        </div>
     </div>
 
     <!-- div data-mt-button="dark-mode"></!-->
 
-    <nav>
-        <div class="w3-bar w3-black">
-            <a class="w3-bar-item w3-button" data-mt-type="menu-link" href="index.html" target="_top">Home</a>
-            <a class="w3-bar-item w3-button" data-mt-type="menu-link" href="pages/tutorial.html"
-                target="_top">Tutorial</a>
-        </div>
-    </nav>
-
-
-
-    <div class="w3-container">
-
+    <div class="container">
         <iframe data-mt-type="entrance-door" data-mt-id="home" src="pages/home.html"></iframe>
 
         Powered by MereTheme (c)
     </div>
-    </div>
+
 </body>
 
 </html>
