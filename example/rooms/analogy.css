@@ -1,3 +1,9 @@
-.analogy-card {
-    width: 18rem;
+.analogy {
+    width: 14rem;
+}
+
+.analogy-item {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
 }

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../lib/meretheme.js"></script>
     <link rel="stylesheet" href="../../lib/meretheme.css" />
+    <link rel="stylesheet" href="../style.css" />
 </head>
 
 <body data-mt-id="home" data-mt-type="house">
     <div data-mt-include="bootstrap" />
     <div data-mt-type="content">
+        <h2>Implementation</h2>
+
+        <iframe class="analogy-room" data-mt-type="room" data-mt-id="analogy" src="../rooms/analogy.html"></iframe>
+
         <div data-mt-markdown="true">
-            ## Implementation
 
             ### Reusable components
 
@@ -51,6 +55,11 @@
             be a good idea. In MereTheme the iframs calculates the sizes the need on every resize event, and report to
             the parent page that will adjust the size.
 
+            ## Downside
+            As any loose coupled component framework, the downside is that integrations must be loaded for each
+            component.
+            If you are for instance using bootstrap in both the garden, house and any rooms, it will be loaded for each
+            of them.
 
         </div>
 

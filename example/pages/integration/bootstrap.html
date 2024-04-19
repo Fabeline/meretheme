@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - Tailwind css integration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../../lib/meretheme.css" />
+</head>
+
+<body data-mt-id="bootstrap" data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+
+    <div data-mt-type="content">
+        <h2>Bootstrap integration</h2>
+        <div data-mt-markdown="true">
+            MereTheme supports css bootstrap integration. If you need to use the javascript components, that must be
+            included manually. Current version included is Bootstrap 5.0.2.
+        </div>
+        <ol>
+            <li>
+                Add this to the file where you want to include the bootstrap css:
+                <pre data-mt-code="true"
+                    data-mt-code-lang="html">&lt;div data-mt-include="bootstrap"&gt;&lt/div&gt;</pre>
+            </li>
+            <li>Use the Bootstrap classes in your HTML</li>
+        </ol>
+
+        <h3>Example</h3>
+
+        <!-- prettier-ignore -->
+        <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;div data-mt-include="bootstrap"&gt;&lt;/div&gt;
+&lt;div class="container"&gt;
+    This is a primary alert—check it out!
+&lt;/div&gt;
+</pre>
+
+        <h3 class="mt-4">Tutorial</h3>
+        <p>
+            You can check out w3c's <a href="https://www.w3schools.com/bootstrap5/" target="_blank">Bootstrap
+                tutorial</a> to get started.
+        </p>
+    </div>
+    </div>
+</body>
+
+<!--
+
+        <code class="language-html">
+<div data-mt-code="true">&lt;div data-mt-include="bootstrap"&gt;&lt;/div&gt;
+    &lt;div class="container"&gt;
+    This is a primary alert—check it out!
+    &lt;/div&gt;
+&lt;/div&gt;</div>
+</code>
+
+
+
+-->
+
+</html>
