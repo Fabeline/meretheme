@@ -9,35 +9,33 @@
     <link rel="stylesheet" href="../style.css" />
 </head>
 
-<body data-mt-id="analogy-page" data-mt-type="house">
-    <div data-mt-include="bootstrap" />
-    <div data-mt-type="content">
+<body data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+    <h2 class="mb-4">Analogy</h2>
 
-        <h2 class="mb-4">Analogy</h2>
+    <iframe class="analogy-room" data-mt-type="room" src="../rooms/analogy.html"></iframe>
 
-        <iframe class="analogy-room" data-mt-type="room" data-mt-id="analogy" src="../rooms/analogy.html"></iframe>
+    <div data-mt-markdown="true">
+        To make it easier to understand how MereTheme works, we have created some analogies.
 
-        <div data-mt-markdown="true">
-            To make it easier to understand how MereTheme works, we have created some analogies.
+        #### Garden
+        The topmost page is the
+        garden. It is the master controller, and contains the content that should be visible on every page. For
+        instance the menu and a footer.
 
-            #### Garden
-            The topmost page is the
-            garden. It is the master controller, and contains the content that should be visible on every page. For
-            instance the menu and a footer.
+        #### House
+        The garden has an entrance door to a house. It can only have one house at a given time.
+        The house are the pages. They are the main content of the site.
 
-            #### House
-            The garden has an entrance door to a house. It can only have one house at a given time.
-            The house are the pages. They are the main content of the site.
+        #### Path
+        The path is the link to the house.
 
-            #### Path
-            The path is the link to the house.
-
-            #### Room
-            A house can have mutliple rooms. They are
-            small, reusable components that be shared across the houses. Like the box on the top right of this page
-            explaining the
-            analogies.
-        </div>
+        #### Room
+        A house can have mutliple rooms. They are
+        small, reusable components that be shared across the houses. Like the box on the top right of this page
+        explaining the
+        analogies.
+    </div>
 </body>
 
 </html>
