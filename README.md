@@ -1,2 +1,4 @@
 # MereTheme
-A simplistic frontend framework
+Your simplistic frontend framework
+
+[Read the documentation](https://fabeline.github.io/meretheme)
