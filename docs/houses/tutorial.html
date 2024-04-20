@@ -15,33 +15,32 @@
 
     <iframe class="analogy-room" data-mt-type="room" src="../rooms/analogy.html"></iframe>
 
-    <div>
+    <p>
         If you haven't already, you should start by reading the <a data-mt-type="path" href="analogy-page.html">analogy
-            page</a>.
-        To make the tutorial simpe, we don't add any styling.
-    </div>
+            page</a>. To make the tutorial simpe, we don't add any styling.
+    </p>
 
     <div class="pt-4" data-mt-markdown="true">
-        ## Create a garden
+        ### Create a garden
         Start by creating your garden. This is the page wrapper that will be shown around every page/house.
         It can for
         instance include a heading, menu and a footer.
 
-        The garden must contain the following:
+        To create a garden, you can do the following:
+        - Create a basic html file named **index.html**
         - Add the **meretheme.js** script and the **meretheme.css** stylesheet
         - Defining that this is the garden, by adding **data-mt-type="garden"** to the body tag
         - An entrance door to the house by adding an iframe
         - (Note that your page will not work correctly before we have created the home house)
     </div>
 
-    <h3>Example</h3>
     <!-- prettier-ignore -->
     <pre data-mt-code="true" data-mt-code-lang="html">
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;MereTheme test&lt;/title&gt;
-    &lt;script src=&quot;lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;garden&quot;&gt;
@@ -53,7 +52,7 @@
 </pre>
 
     <div class="pt-4" data-mt-markdown="true">
-        ## Create a house
+        ### Create a house
         The house is the main content of the page. Do the following to create your first house:
 
         - Create a folder named **houses**
@@ -68,8 +67,8 @@
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;Home&lt;/title&gt;
-    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;house&quot;&gt;
@@ -83,7 +82,7 @@
 
 
     <div class="pt-4" data-mt-markdown="true">
-        ## Create paths to the houses
+        ### Create paths to the houses
         A path leads to a house in the garden, like a link. Let's first create another house.
         - Create a file named **page1.html** in the **houses** folder
     </div>
@@ -93,8 +92,8 @@
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;Page 1&lt;/title&gt;
-    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;house&quot;&gt;
@@ -129,8 +128,6 @@
         - Add the **meretheme.js** script and the **meretheme.css** stylesheet
         - Add **data-mt-type="room"** to the body tag of the room to define it as a room
         - You can set the width of the room container, but the height will be adjusted to the content
-
-        ### Example
     </div>
 
     <!-- prettier-ignore -->
@@ -139,8 +136,8 @@
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;room&quot;&gt;
@@ -150,7 +147,7 @@
 </pre>
 
     <div class="pt-4" data-mt-markdown="true">
-        ## Add the room to a house
+        ### Add the room to a house
 
         You can now add the room any times to any house or garden by adding the following to the html file:
     </div>
@@ -159,6 +156,13 @@
     <pre data-mt-code="true" data-mt-code-lang="html">
 &lt;iframe data-mt-type=&quot;room&quot; src=&quot;../rooms/box.html&quot;&gt;&lt;/iframe&gt;
 </pre>
+
+    <h3 class="mt-5">What's next?</h3>
+    <p>
+        You can check out the <a data-mt-type="path" href="integration.html">integrations</a> to add styling, icons and
+        content.
+    </p>
+
 </body>
 
 </html>
