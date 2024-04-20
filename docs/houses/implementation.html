@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - implementation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../lib/meretheme.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+    <h2>Implementation</h2>
+
+    <iframe class="analogy-room" data-mt-type="room" src="../rooms/analogy.html"></iframe>
+
+    <div data-mt-markdown="true">
+        Here is a quick resume of the MereTheme implementation.
+
+        ### Reusable components
+
+        MereTheme has a built in iframe system for handling reusable components. We avoid using JavaScript for
+        rendering since most search engine crawlers do not use JavaScript when they crawl the web.
+
+        ### SEO friendly
+
+        To be able to meet the requirement of being a search engine optimization (SEO) friendly framework, all pages
+        should be written in HTML and not rendered with JavaScript.
+
+        MereTheme uses iframes to be able to reuse components across pages. This works nicely with SEO, but note
+        that it considers the iframe as a separate website than the main site.
+
+        #### Routing
+
+        Each house has it's own standalone html file, and are inserted into the garden. They are accessible on your
+        file system
+        or a web server. If you go directly to one of the houses, you will be forwarded to the garden with the
+        selected house embedded in an iframe.
+
+        #### Menu
+
+        We have a build in menu system where you can define links to different houses. This will
+        make the search engines find your houses. If you click one of the links,
+        MereTheme will intercept the click event and load the house in an iframe and give the menu item an "active"
+        css class for you to style.
+
+        #### Title
+        When you load a new page in an iframe, MereTheme will fetch the
+        title of the page, report it to the parent frame, and set it as the title of the main page.
+
+        ## Accessible
+        Iframes are not the best when it comes to accessibility. That is because you need to hardcode their size. To
+        be truly accessible a page must for instance support different text sizes, so setting a strict size will not
+        be a good idea. In MereTheme the iframs calculates the sizes the need on every resize event, and report to
+        the parent page that will adjust the size.
+
+        ## Downside
+        As any loose coupled component framework, the downside is that integrations must be loaded for each
+        component.
+        If you are for instance using bootstrap in both the garden, house and any rooms, it will be loaded for each
+        of them.
+    </div>
+</body>
+
+</html>

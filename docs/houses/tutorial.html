@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../lib/meretheme.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+    <h2 class="mb-4">Tutorial</h2>
+
+    <iframe class="analogy-room" data-mt-type="room" src="../rooms/analogy.html"></iframe>
+
+    <div>
+        If you haven't already, you should start by reading the <a data-mt-type="path" href="analogy-page.html">analogy
+            page</a>.
+        To make the tutorial simpe, we don't add any styling.
+    </div>
+
+    <div class="pt-4" data-mt-markdown="true">
+        ## Create a garden
+        Start by creating your garden. This is the page wrapper that will be shown around every page/house.
+        It can for
+        instance include a heading, menu and a footer.
+
+        The garden must contain the following:
+        - Add the **meretheme.js** script and the **meretheme.css** stylesheet
+        - Defining that this is the garden, by adding **data-mt-type="garden"** to the body tag
+        - An entrance door to the house by adding an iframe
+        - (Note that your page will not work correctly before we have created the home house)
+    </div>
+
+    <h3>Example</h3>
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;MereTheme test&lt;/title&gt;
+    &lt;script src=&quot;lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;lib/meretheme.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-mt-type=&quot;garden&quot;&gt;
+    &lt;h1&gt;MereTheme&lt;/h1&gt;
+    &lt;iframe data-mt-type=&quot;entrance-door&quot; src=&quot;houses/home.html&quot;&gt;&lt;/iframe&gt;
+    &lt;p&gt;Powered by MereTheme&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    <div class="pt-4" data-mt-markdown="true">
+        ## Create a house
+        The house is the main content of the page. Do the following to create your first house:
+
+        - Create a folder named **houses**
+        - Create a basic html file named **home.html** in the **houses** folder
+        - Add the **meretheme.js** script and the **meretheme.css** stylesheet
+        - Add **data-mt-type="house"** to the body tag of the house to define it as a house
+        - Note that MereTheme also supports a deeper structure. For instance houses/blogg/20240420.html
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-mt-type=&quot;house&quot;&gt;
+    &lt;h2&gt;Welcome!&lt;/h2&gt;
+    &lt;p&gt;This is the home house&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+    <p>Now you can double click on your index.html file and see that it loads both the garden with the heading and
+        the house</p>
+
+
+    <div class="pt-4" data-mt-markdown="true">
+        ## Create paths to the houses
+        A path leads to a house in the garden, like a link. Let's first create another house.
+        - Create a file named **page1.html** in the **houses** folder
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page 1&lt;/title&gt;
+    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-mt-type=&quot;house&quot;&gt;
+    &lt;h2&gt;Page 1!&lt;/h2&gt;
+    &lt;p&gt;This is the page 1 house&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    <div>
+        Then we will add path to the houses in the garden. Add the following to the garden (index.html):
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;a data-mt-type=&quot;path&quot; href=&quot;index.html&quot;&gt;Home&lt;/a&gt;
+&lt;a data-mt-type=&quot;path&quot; href=&quot;houses/page1.html&quot;&gt;Page 1&lt;/a&gt;
+</pre>
+
+    <p>
+        You can now test your page and see that you switch between the home and page 1 houses by clicking the links.
+        The paths can be added both in the garden, house or rooms for internal linking.
+    </p>
+
+    <div class="pt-4" data-mt-markdown="true">
+        ## Create a room
+        A room is a reusable component that can be shared across houses. Let's create a room that we can use in both
+        houses.
+
+        - Create a folder named **rooms**
+        - Create a basic html file named **box.html** in the **rooms** folder
+        - Add the **meretheme.js** script and the **meretheme.css** stylesheet
+        - Add **data-mt-type="room"** to the body tag of the room to define it as a room
+        - You can set the width of the room container, but the height will be adjusted to the content
+
+        ### Example
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;script src=&quot;../lib/meretheme.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;../lib/meretheme.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body data-mt-type=&quot;room&quot;&gt;
+    This is a reusable box with text 📦
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+    <div class="pt-4" data-mt-markdown="true">
+        ## Add the room to a house
+
+        You can now add the room any times to any house or garden by adding the following to the html file:
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;iframe data-mt-type=&quot;room&quot; src=&quot;../rooms/box.html&quot;&gt;&lt;/iframe&gt;
+</pre>
+</body>
+
+</html>

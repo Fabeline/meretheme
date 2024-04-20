@@ -3,7 +3,7 @@ iframe {
     width: 100%;
 }
 
-[data-mt-type="house"] {
+[data-mt-type="house"], [data-mt-type="room"] {
     margin: 0;
     overflow: hidden;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - Prism integration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../../lib/meretheme.css" />
+</head>
+
+<body data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+    <h2>Prism</h2>
+    <div data-mt-markdown="true">
+        Prism can be used to highlight code in your HTML. It will automatically be included when you do the following:
+    </div>
+    <ol>
+        <li>
+            Wrap your code in a <strong>pre</strong> tag with the <strong>data-mt-code="true"</strong> and
+            <strong>data-mt-code-lang="language"</strong>
+            attributes.
+        </li>
+    </ol>
+    <h3 class="mt-4">Things to be aware of</h3>
+    <ul>
+        <li>You need to use html entities for characters that is included in html. For instance use &amp;lt; for &lt;
+        </li>
+        <li>It is sensitive to tabs and spaces. If you struggle with prettier formatting it in a way that messes things
+            up, you can enter &lt;!-- prettier-ignore --&gt; before the pre tag, and prettier won't format the inside of
+            pre tag.
+        </li>
+    </ul>
+
+    <h3 class="mt-4">Example</h3>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;pre data-mt-code=&quot;true&quot; data-mt-code-lang=&quot;html&quot;&gt;
+</pre>
+
+    <h3 class="mt-4">Supported languages</h3>
+    <p>
+        <a href="https://prismjs.com/#supported-languages" target="_blak">List of supported languages</a>.
+    </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - Markdown integration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../../lib/meretheme.css" />
+</head>
+
+<body data-mt-type="house">
+    <div data-mt-include="bootstrap"></div>
+    <h2>Markdown integration</h2>
+    <div data-mt-markdown="true">
+        MereTheme uses the marked library to convert from markdown to HTML.
+
+        1. Add the **data-mt-markdown="true"** attribute to the div where you want to include markdown.
+        2. Start writing markdown directly in your HTML file
+    </div>
+    <h3>Example</h3>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;div data-mt-markdown="true"&gt;
+    # This is a heading
+    1. First list item
+    2. Second list item
+&lt;/div&gt;</pre>
+
+
+    <h3 class="mt-4">Tutorial</h3>
+    <p>
+        You can find a nice tutorial at <a href="https://www.markdowntutorial.com/"
+            target="_blank">markdowntutorial.com</a> to get started with markdown.
+
+    </p>
+    <p>
+        A handy markdown cheat sheet can be found at <a href="https://www.markdownguide.org/cheat-sheet/"
+            target="_blank">markdownguide.org</a>.
+    </p>
+</body>
+
+</html>
