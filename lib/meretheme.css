@@ -1,0 +1,25 @@
+iframe {
+    border: none;
+    width: 100%;
+}
+
+[data-mt-type="house"] {
+    margin: 0;
+    overflow: hidden;
+}
+
+[data-mt-type="entrance-door"]{
+    transition: height 0.5s;
+}
+
+.light-mode {
+    filter: invert(100%);
+}
+
+.light-mode img, .light-mode iframe {
+    filter: invert(100%);
+}
+
+.mt-house {
+    overflow: hidden;
+}

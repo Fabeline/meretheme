@@ -1,0 +1,20 @@
+html {
+    background: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.analogy-room {
+    width: 14rem;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.link-no-underline {
+    text-decoration: none !important;
+}

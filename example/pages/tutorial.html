@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>MereTheme - home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../lib/meretheme.js"></script>
+    <link rel="stylesheet" href="../../lib/meretheme.css" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-mt-id="home" data-mt-type="house">
+    <div data-mt-include="bootstrap" />
+    <div data-mt-type="content">
+
+        <h2 class="mb-4">Tutorial</h2>
+
+        <iframe class="analogy-room" data-mt-type="room" data-mt-id="analogy" src="../rooms/analogy.html"></iframe>
+
+        <div data-mt-markdown="true">
+
+            ### Getting started
+
+            To get started with MereTheme, you need to include the MereTheme JavaScript and CSS files in your HTML file.
+            You can download the files from the [MereTheme GitHub repository]
+
+            ### Analogies
+            To make it easier to understand how MereTheme works, we have created some analogies.
+
+            #### Garden
+            The topmost page is the
+            garden. It is the master controller, and contains the content that should be visible on every page. For
+            instance the menu and a footer.
+
+            #### House
+            The garden has an entrance door to a house. It can only have one house at a given time.
+            The house are the pages. They are the main content of the site.
+
+            #### Room
+            A house can have mutliple rooms. They are
+            small, reusable components that be shared across the houses. Like the box on the top right of this page
+            explaining the
+            analogies.
+        </div>
+</body>
+
+</html>
