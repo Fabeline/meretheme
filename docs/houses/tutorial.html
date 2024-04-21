@@ -4,8 +4,7 @@
     <title>MereTheme - tutorial</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../lib/meretheme.js"></script>
-    <link rel="stylesheet" href="../../lib/meretheme.css" />
+    <script src="../loader.js"></script>
     <link rel="stylesheet" href="../style.css" />
 </head>
 
@@ -15,14 +14,34 @@
 
     <iframe class="analogy-room" data-mt-type="room" src="../rooms/analogy.html"></iframe>
 
-    <p>
-        If you haven't already, you should start by reading the <a data-mt-type="path" href="analogy-page.html">analogy
-            page</a>. To make the tutorial simpe, we don't add any styling.
-    </p>
+    <div data-mt-markdown="true">
+        ### Create a loader
+        The first thing you should do is to make a loader file that will load the current MereTheme files. If you want
+        to upgrade the version of MereTheme you are using later, you can change the CDN addresses in this file.
+        1. Create a file named loader.js
+        2. Paste this code into the file.
+    </div>
+
+    <!-- prettier-ignore -->
+    <pre data-mt-code="true" data-mt-code-lang="javascript">
+const merethemeStyleCDN = &quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.2.0-alpha/lib/meretheme.css&quot;;
+const merethemeCodeCDN =  &quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.2.0-alpha/lib/meretheme.js&quot;
+
+window.addEventListener(&#39;load&#39;, function() {
+    var script = document.createElement(&#39;script&#39;);
+    script.src = merethemeCodeCDN;
+    document.head.appendChild(script);
+
+    var link = document.createElement(&#39;link&#39;);
+    link.rel = &#39;stylesheet&#39;;
+    link.href = merethemeStyleCDN;
+    document.head.appendChild(link);
+});
+</pre>
 
     <div class="pt-4" data-mt-markdown="true">
         ### Create a garden
-        Start by creating your garden. This is the page wrapper that will be shown around every page/house.
+        Then you can create your garden. This is the page wrapper that will be shown around every page/house.
         It can for
         instance include a heading, menu and a footer.
 
@@ -39,8 +58,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;MereTheme test&lt;/title&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;./loader.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;garden&quot;&gt;
@@ -67,8 +85,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;Home&lt;/title&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;../loader.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;house&quot;&gt;
@@ -92,8 +109,7 @@
 &lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;title&gt;Page 1&lt;/title&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;../loader.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;house&quot;&gt;
@@ -136,8 +152,7 @@
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.js&quot;&gt;&lt;/script&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.1.0-alpha/lib/meretheme.css&quot; /&gt;
+    &lt;script src=&quot;../loader.js&quot;&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body data-mt-type=&quot;room&quot;&gt;
