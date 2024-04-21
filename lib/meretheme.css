@@ -20,6 +20,6 @@ iframe {
     filter: invert(100%);
 }
 
-.mt-house {
-    overflow: hidden;
+.hideme {
+    opacity: 0;
 }
