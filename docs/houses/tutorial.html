@@ -28,6 +28,7 @@ const merethemeStyleCDN = &quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v
 const merethemeCodeCDN =  &quot;https://cdn.jsdelivr.net/gh/fabeline/meretheme@v0.2.0-alpha/lib/meretheme.js&quot;
 
 window.addEventListener(&#39;load&#39;, function() {
+    document.body.style.opacity = 0;
     var script = document.createElement(&#39;script&#39;);
     script.src = merethemeCodeCDN;
     document.head.appendChild(script);
