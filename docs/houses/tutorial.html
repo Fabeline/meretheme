@@ -172,6 +172,15 @@ window.addEventListener(&#39;load&#39;, function() {
 &lt;iframe data-mt-type=&quot;room&quot; src=&quot;../rooms/box.html&quot;&gt;&lt;/iframe&gt;
 </pre>
 
+    <h3 class="pt-4">Tips</h3>
+    <ul>
+        <li>If you want to run some JavaScript after the page has loaded in your house, you can listen to the
+            "afterResize" message. Note that it will be called on every resize, so make sure it can be called several
+            times.</li>
+        <li>When linking externally inside a house or room, you should use target="_top" or target="_blank" to avoid
+            opening it inside an iframe.</li>
+    </ul>
+
     <h3 class="mt-5">What's next?</h3>
     <p>
         You can check out the <a data-mt-type="path" href="integration.html">integrations</a> to add styling, icons and
