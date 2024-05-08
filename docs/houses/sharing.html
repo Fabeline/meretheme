@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <title>Sharing pages</title>
+    <meta name="description" content="How to use MereTheme with open graph and search engine optimizations">
+    <meta property="og:title" content="Sharing pages" />
+    <meta property="og:description" content="How to use MereTheme with open graph and search engine optimizations" />
+    <meta property="og:url" content="https://fabeline.github.io/meretheme/docs/houses/sharing.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MereTheme" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../loader.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body data-mt-type="house" style="opacity: 0;">
+    <div data-mt-include="bootstrap"></div>
+    <div>
+        <h2>Sharing your pages</h2>
+        <p>
+
+            To be able to create a nice shareable object in social media, you can use the open graph protocol.
+            <a href="https://ogp.me/" target="_blank">Read more about OG</a>.
+            Since we use iframes for implementation we need to do some special handling around this to be able to have
+            different OG tags for each page (house). That is why we have
+            integrated social media buttons into the framework. Look at the bottom of this page to see a preview of the
+            buttons. Note that you should share the link to the house file and not the index file when sharing a link
+            to a page.
+        </p>
+
+        <p>
+        <h3 class="h4 mt-4">1. Add your OG tags to the &lt;head&gt of the house files. Example:</h3>
+        <!-- prettier-ignore -->
+        <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;meta property=&quot;og:title&quot; content=&quot;Home&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;A simple open source frontend framework requiring no server or build time.&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;https://fabeline.github.io/meretheme/docs/houses/home.html&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;MereTheme&quot; /&gt;            
+</pre>
+        </p>
+
+        <p>
+        <h3 class="h4 mt-4">2. Add social media buttons somewhere in the &lt;body&gt; </h3>
+        </p>
+        <div>
+
+            <!-- prettier-ignore -->
+            <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;div 
+    data-mt-type=&quot;share&quot; 
+    data-mt-value=&quot;copy, facebook, twitter, linkedin&quot;
+&gt;&lt;/div&gt;
+</pre>
+
+        </div>
+        <h3 class="h4 mt-4">Translations</h3>
+        <p>
+            To be accessible, the icons have aria-labels. If you want to change the labels (for instance translations),
+            you can do so by adding them to the attribute "data-mt-translations" in the same order as you specified the
+            media.
+        </p>
+
+        <!-- prettier-ignore -->
+        <pre data-mt-code="true">
+data-mt-translations="copycat, fjøsbok, tvitre, linkedin"
+</pre>
+
+        <p>
+            The confirm message for the copy button can be changed by adding the following attribute:
+            <strong></strong> to the same div:
+        </p>
+
+        <!-- prettier-ignore -->
+        <pre data-mt-code="true">
+data-mt-copy-confirm="Your content has been copied"
+</pre>
+
+        <h2 class="mt-5">Search engine optimization</h2>
+        <p>
+            Other meta tags should also be added to the head of your house files to improve SEO. For instance:
+        </p>
+        <!-- prettier-ignore -->
+        <pre data-mt-code="true" data-mt-code-lang="html">
+&lt;meta name=&quot;description&quot; content=&quot;A simple open source frontend framework requiring no server or build time.&quot;&gt;
+</pre>
+    </div>
+</body>
+
+</html>

@@ -18,3 +18,8 @@ html {
 .link-no-underline {
     text-decoration: none !important;
 }
+
+.share {
+    justify-content: flex-end;
+    margin: 10px;
+}
