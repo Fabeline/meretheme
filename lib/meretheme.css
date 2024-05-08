@@ -51,7 +51,8 @@ iframe {
 .media-share:hover, .media-share:focus {
     width: 1.5em;
     height: 1.5em;
-    margin: -0.125em;
+    margin: -0.125em; 
+    color: white;
 }
 
 .copy-confirmation{
