@@ -23,3 +23,42 @@ iframe {
 .hideme {
     opacity: 0;
 }
+
+[data-mt-type="share"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.media-share {
+    all: unset;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.media-share i {
+    font-size: 1.25em;
+}
+
+.media-share:hover, .media-share:focus {
+    width: 1.5em;
+    height: 1.5em;
+    margin: -0.125em;
+}
+
+.copy-confirmation{
+    position: absolute;
+    margin-top: 70px;
+    padding: 3px 5px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    color: black;
+}
