@@ -1,5 +1,5 @@
 const merethemeStyleCDN = "https://www.fabeline.com/meretheme/lib/meretheme.css" /*//"https://cdn.jsdelivr.net/gh/fabeline/meretheme@latest/lib/meretheme.css"; // "file:///C:/progging/meretheme/lib/meretheme.css";*/
-const merethemeCodeCDN =  "https://www.fabeline.com/meretheme/lib/meretheme.js" /*//"https://cdn.jsdelivr.net/gh/fabeline/meretheme@latest/lib/meretheme.js"; // "file:///C:/progging/meretheme/lib/meretheme.js";*/
+const merethemeCodeCDN =  "https://www.fabeline.com/meretheme/lib/meretheme.min.js" /*//"https://cdn.jsdelivr.net/gh/fabeline/meretheme@latest/lib/meretheme.js"; // "file:///C:/progging/meretheme/lib/meretheme.js";*/
 
 window.addEventListener('load', function() {
     var script = document.createElement('script');
