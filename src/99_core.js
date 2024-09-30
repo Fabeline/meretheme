@@ -66,17 +66,28 @@ const getBaseHouseUrl = () => {
 
 const getNewHouseUrl = (houseId, forHistory = false) => {
     const baseHouseUrl = getBaseHouseUrl();
-    let housePath = `houses/${houseId}.html`;
+    let housePath = "";
+    let queryParams = "";
+
+    // Check if the houseId contains query parameters (e.g., sparetime?highlight=robi)
+    if (houseId.includes("?")) {
+        const [base, query] = houseId.split("?");
+        housePath = `houses/${base}.html`;
+        queryParams = `?${query}`;
+    } else {
+        housePath = `houses/${houseId}.html`;
+    }
+
     let url = "";
 
-    if(window.location.protocol === "file:" && forHistory) { 
+    if (window.location.protocol === "file:" && forHistory) {
         url = `?page=${houseId}`;
     } else {
-        url = `${baseHouseUrl}${housePath}`;
+        url = `${baseHouseUrl}${housePath}${queryParams}`;
     }
 
     return url;
-}
+};
 
 // Called by the garden
 const loadHouse = (houseId) => {
@@ -208,13 +219,14 @@ const debug = (...messages) => {
 }
 
 const redirectHouse = () => {
-    //If you are a house and the topmost iframe, go to the garden instead with the house included
-    if(isTopmostIframe()){
-        //TODO: add support for custom query params
+    // If you are a house and the topmost iframe, go to the garden instead with the house included
+    if (isTopmostIframe()) {
+        const currentParams = window.location.search;  // This includes the query string, e.g., "?highlight=robi"
         const pathPrefix = "../".repeat((documentId.match(/\//g) || []).length + 1).split("?")[0];
-        window.location.href = `${pathPrefix}index.html?page=${documentId.replace("-house", "")}`;
+        window.location.href = `${pathPrefix}index.html?page=${documentId.replace("-house", "")}${currentParams}`;
     }
 }
+
 
 // The houses listens to size updates from rooms
 window.onmessage = (event) => {
